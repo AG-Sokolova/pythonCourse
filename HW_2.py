@@ -1,9 +1,10 @@
-# Arithmetic
-
-print('\033[1m' + '\033[94m' + 'Arithmetic' + '\033[94m' + '\033[0m')
-#  1. Создать переменную item_1 типа integer.
 import math
 
+
+# Arithmetic
+print('\033[1m' + '\033[94m' + 'Arithmetic' + '\033[94m' + '\033[0m')
+
+#  1. Создать переменную item_1 типа integer.
 item_1 = 5
 print("item_1:", item_1)
 
@@ -62,36 +63,58 @@ result_mp_s_root = math.pow(item_2, 1/2)
 #  18. Вывести result_mp_s_root в консоль.
 print('result_mp_s_root', result_mp_s_root, '\n')
 
-print("доделать с 19 по 32")
 #  19. Присвоить переменной item_1 odd значение
-item_1 = 1
-print('item1', item_1)
+item_1 = 5
+if item_1 % 2 != 0:
+    print('item_1:', item_1, ' - odd')
+else:
+    print(item_1, ' - item_1 должно быть нечетным! Введите новое число.')
 
 #  20. Присвоить переменной item_2 even значение
-item_2 = 3
-print('item2:', item_2)
+item_2 = 4
+if item_2 % 2 == 0:
+    print('item_1:', item_2, ' - even')
+else:
+    print(item_2, ' - item_2 должно быть четным! Введите новое число.')
 
 #  21. Создать переменную result_division в которой вы разделите item_1 на item_2.
 result_division = item_1/item_2
 
 #  22. Вывести result_division в консоль.
-print('result_division', result_division)
+print('result_division:', result_division)
 
 #  23. Создать переменную result_m_floor и result_division округлить до ближайшего целого меньшего чем result_division.
-result_m_floor = round(result_division)
+result_m_floor = math.floor(result_division)
 
 #  24. Вывести result_m_floor в консоль.
-print('result_m_floor', result_m_floor)
+print('result_m_floor:', result_m_floor)
 
 #  25. Создать переменную result_m_ceil и result_division округлить до ближайшего целого большего чем result_division.
+result_m_ceil = math.ceil(result_division)
+
 #  26. Вывести result_m_ceil в консоль.
+print('result_m_ceil:', result_m_ceil)
+
 #  27. Создать переменную result_int и result_division округлить до ближайшего целого через явное приведение.
+result_int = int(result_division)
+
 #  28. Вывести result_int в консоль.
+print('result_int:', result_int)
+
 #  29. Создать переменную result_no_division_loss в которой вы разделите item_1 на item_2 без остатка.
+result_no_division_loss = item_1//item_2
+
 #  30. Вывести result_no_division_loss в консоль.
+print('result_no_division_loss:', result_no_division_loss)
+
 #  31. Создать переменную result_division_loss в которой вы найдёте остаток от деления item_1 на item_2.
+result_division_loss = item_1 % item_2
+
 #  32. Вывести result_division_loss в консоль.
-#
+print('result_division_loss:', result_division_loss)
+
+
+
 # Дальше будет реализация через арифметические действия с присваиванием.
 print('\033[1m' + '\033[94m' + 'Aрифметические действия с присваиванием' + '\033[94m' + '\033[0m')
 
@@ -100,46 +123,47 @@ item_3 = 50
 print('item_3:', item_3)
 
 #  34. Прибавить 10 к item_3 с присвоением.
-item_3 = 10 + item_3
+item_3 += 10
 
 #  35. Вывести item_3 в консоль.
 print('item_3 + 10 =', item_3)
 
 #  36. Отнять 5 от item_3 с присвоением.
-item_3 = item_3 - 5
+item_3 -= 5
 
 #  37. Вывести item_3 в консоль.
 print('item_3 - 5 =', item_3)
 
 #  38. Умножить item_3 на 3 с присвоением.
-item_3 = item_3 * 3
+item_3 *= 3
 
 #  39. Вывести item_3 в консоль.
 print('item_3 * 3 =', item_3)
 
 #  40. Разделить item_3 на 2 с присвоением.
-item_3 = item_3 / 2
+item_3 /= 2
 
 #  41. Вывести item_3 в консоль.
 print('item_3 / 2 =', item_3)
 
 #  42. Возвести в степень 2 item_3 с присвоением.
-item_3 = item_3 ** 2
+item_3 **= 2
 
 #  43. Вывести item_3 в консоль.
-print('item_3 степень 2 =', item_3)
+print('item_3 pow 2 =', item_3)
 
 #  44. Найти квадратный корень item_3 с присвоением.
 item_3 = math.sqrt(item_3)
 
 #  45. Вывести item_3 в консоль.
-print('item_3 корень 2 =', item_3)
+print('item_3 sqrt 2 =', item_3)
 
 #  46. Присвоить остаток от деления item_3
+item_3 %= item_3
 
-print('доделать 46 задание')
 #  47. Вывести item_3 в консоль.
-#
+print('item_3 % item_3 =', item_3)
+
 
 # Boolean
 print('\033[1m' + '\033[94m' + 'Boolean' + '\033[94m' + '\033[0m')
