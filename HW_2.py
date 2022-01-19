@@ -96,7 +96,7 @@ result_m_ceil = math.ceil(result_division)
 print('result_m_ceil:', result_m_ceil)
 
 #  27. Создать переменную result_int и result_division округлить до ближайшего целого через явное приведение.
-result_int = int(result_division)
+result_int = int(round(result_division))  # почитать про тип long 
 
 #  28. Вывести result_int в консоль.
 print('result_int:', result_int)
@@ -154,6 +154,7 @@ print('item_3 pow 2 =', item_3)
 
 #  44. Найти квадратный корень item_3 с присвоением.
 item_3 = math.sqrt(item_3)
+item_3 **= 0.5
 
 #  45. Вывести item_3 в консоль.
 print('item_3 sqrt 2 =', item_3)
