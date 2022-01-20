@@ -82,8 +82,7 @@ res = (7 + 12)**3 + 7 * 4 - 44 / 2**4
 print('Возвдение в степень:', res)
 
 # 18) Вывести в одну строку переменные типа String и Integer используя “,” (Запятую)
-print('\n', 'string:', str1, type(str1), '\n', 'number:', numb1, type(numb1))
-print('string, integer:', str1, numb1)
+print('Строка', 1)
 
 # 19) Вывести в одну строку переменные типа String и Integer используя “+” (Плюс)
-print('string + integer:', str1 + str(numb1))
+print('Cтрока', str(2))
