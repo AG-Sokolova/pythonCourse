@@ -44,12 +44,18 @@ run = True  # 4
 # for item in range(for_count, range_count):
 #     print('Step =', item)
 
-# # 11. Сделать цикл for c переменной item который будет работать пока счётчик range досчитает от 0 до 30
-# for item in range(0, 30):
-#     if item == 5 or item == 10 or item == 4 or item == 27:
-#         print('item =', item)
-#     else:
-#         print('Step =', item)
+# 11. Сделать цикл for c переменной item который будет работать пока счётчик range досчитает от 0 до 30
+for item in range(0, 30):
+    print('Step =', item)
+    if item == 5:
+        print('Item =', item)
+    if item == 10:
+        print('Item =', item)
+    if item < 4:
+        print('Item <', item)
+    if (item > 27) or (item == 27):
+        print('Item >=', item)
+
 
 # # 12. Сделать цикл for c переменной item который будет работать пока счётчик range досчитает от 0 до range_count +1
 # for item in range(0, range_count+1):
@@ -63,11 +69,11 @@ run = True  # 4
 #                 inner_count = inner_item
 #         print('--inner_count =', inner_count)
 
-# Сделать цикл for c переменной item который будет работать пока счётчик range досчитает от 0 до 20
-for item in range(0, 20):
-    if (7 < item) and (item < 12):
-        print('If_item =', item)
-        continue
-    else:
-        print('Step =', item)
-print('End_iteration =', item)
+# # Сделать цикл for c переменной item который будет работать пока счётчик range досчитает от 0 до 20
+# for item in range(0, 20):
+#     if (7 < item) and (item < 12):
+#         print('If_item =', item)
+#         continue
+#     else:
+#         print('Step =', item)
+# print('End_iteration =', item)
