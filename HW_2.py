@@ -1,6 +1,5 @@
 import math
 
-
 # Arithmetic
 print('\033[1m' + '\033[94m' + 'Arithmetic' + '\033[94m' + '\033[0m')
 
@@ -96,7 +95,8 @@ result_m_ceil = math.ceil(result_division)
 print('result_m_ceil:', result_m_ceil)
 
 #  27. Создать переменную result_int и result_division округлить до ближайшего целого через явное приведение.
-result_int = int(round(result_division))  # почитать про тип long 
+result_int = round(result_division)
+# result_int = int(round(result_division))
 
 #  28. Вывести result_int в консоль.
 print('result_int:', result_int)
@@ -153,7 +153,6 @@ item_3 **= 2
 print('item_3 pow 2 =', item_3)
 
 #  44. Найти квадратный корень item_3 с присвоением.
-item_3 = math.sqrt(item_3)
 item_3 **= 0.5
 
 #  45. Вывести item_3 в консоль.
@@ -207,10 +206,8 @@ b_item_t_int = int(b_item_t)
 #  59. Вывести b_item_1_int в консоль.
 print('b_item_t_int:', b_item_t_int)
 
-#  60. Создать переменную b_item_2_int и присвоить явное приведение b_item_2 к int
+#  60. Создать переменную b_item_2_int и присвоить явное приведение b_item_f к int
 b_item_f_int = int(b_item_f)
 
 #  61. Вывести b_item_2_int в консоль.
 print('b_item_f_int:', b_item_f_int)
-
-
