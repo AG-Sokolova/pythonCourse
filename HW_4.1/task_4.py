@@ -1,3 +1,4 @@
+# https://cash.rbc.ru/converter.html?from=RUR&to=CNY&sum=5000&date=&rate=cbrf
 print('\033[44m' + '\033[30m' + 'Russian ruble converter' + '\033[0m')
 
 dict_cur = {

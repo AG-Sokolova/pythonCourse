@@ -32,9 +32,9 @@ try:
     if amount_money > 0:
         currency_converter(amount_money, dict_cur, dict_items)
     else:
-        print("Введите положительное число.")
+        print('\033[31m' + "Введите положительное число." + '\033[0m')
 except ValueError:
     if not amount_money:
-        print("Вы ввели пустое поле. Введите число.")
+        print('\033[31m' + "Вы ввели пустое поле. Введите число." + '\033[0m')
     else:
-        print("Вы ввели не число. Введите число.")
+        print('\033[31m' + "Вы ввели не число. Введите число." + '\033[0m')
