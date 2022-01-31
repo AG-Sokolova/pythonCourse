@@ -17,8 +17,8 @@ empty = '\033[31m' + 'You have entered an empty field.' + '\033[0m'
 def currency_converter(currency, money, array):
     for key, value in array.items():
         if key == currency:
-            is_converter = round(value * money, 2)
-            return print(f'Converted amount {money} RUB = {is_converter} {key}')
+            converter = round(value * money, 2)
+            return print(f'Converted amount {money} RUB = {converter} {key}')
 
 
 while bol:
