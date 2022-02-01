@@ -9,7 +9,7 @@ def valid_mail(email):
         return False
 
 
-def unique_email(email, users_emails, bol=True):
+def unique_email(email, users_emails):
     if email in users_emails:
         bol = True
     else:
@@ -21,7 +21,7 @@ def unique_email(email, users_emails, bol=True):
 def valid_data(**kwargs):
 
     pattern_phone = r'^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$'
-    pattern_name = r'^([А-ЯЁ]{1}[а-яё]{29})|([A-Z]{1}[a-z]{29})$'
+    pattern_name = r'^[a-zA-Z]'
 
     for key, value in kwargs.items():
         match key:
@@ -33,6 +33,7 @@ def valid_data(**kwargs):
                 bol = True if re.match(pattern_name, value) is not None else False
             case _:
                 bol = False
+
         if not bol:
             print(f'Inviled {key}')
     return bol
