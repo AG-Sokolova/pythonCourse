@@ -5,4 +5,4 @@ def delete_user(email, users_emails, users_storage):
         massage = f'Email {email} - deleted'
     else:
         massage = f'It is impossible to delete. Email {email} - does not exist.'
-    return massage
+    print(massage)

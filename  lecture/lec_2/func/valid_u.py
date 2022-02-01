@@ -2,24 +2,41 @@ import re
 
 
 def valid_mail(email):
-    pattern = r'^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$'
-    if re.match(pattern, email) is not None:
+    pattern_mail = r'^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$'
+    if re.match(pattern_mail, email) is not None:
         return True
     else:
         return False
 
 
-def valid_phone(phone):
-    pattern = r'^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$'
-    if re.match(pattern, phone) is not None:
-        return True
+def unique_email(email, users_emails, bol=True):
+    if email in users_emails:
+        bol = True
     else:
-        return False
+        print(f'This mail {email} already exists!')
+        bol = False
+    return bol
 
 
-def valid_name(name):
-    pattern = r'^([а-яё]+|[a-z]+)$'
-    if re.match(pattern, name) is not None:
-        return True
-    else:
-        return False
+def valid_data(**kwargs):
+
+    pattern_phone = r'^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$'
+    pattern_name = r'^([А-ЯЁ]{1}[а-яё]{29})|([A-Z]{1}[a-z]{29})$'
+
+    for key, value in kwargs.items():
+        match key:
+            case 'email':
+                bol = valid_mail(value)
+            case 'phone':
+                bol = True if re.match(pattern_phone, value) is not None else False
+            case 'name':
+                bol = True if re.match(pattern_name, value) is not None else False
+            case _:
+                bol = False
+        if not bol:
+            print(f'Inviled {key}')
+    return bol
+
+
+
+
