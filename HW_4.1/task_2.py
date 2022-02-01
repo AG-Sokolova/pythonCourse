@@ -17,7 +17,7 @@ dict_items = {
 }
 
 amount_money = input('\033[1m' + 'Введите количество денег: ' + '\033[0m')  # => российский рубль
-
+amount_money = int(amount_money)
 
 for k_item, v_item in dict_items.items():
     for k_cur, v_cur in dict_cur.items():
