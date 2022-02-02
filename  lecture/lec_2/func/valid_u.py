@@ -11,14 +11,16 @@ def valid_mail(email):
 
 def unique_email(email, users_emails):
     if email in users_emails:
-        bol = True
-    else:
         print(f'This mail {email} already exists!')
         bol = False
+    else:
+        bol = True
     return bol
 
 
 def valid_data(**kwargs):
+    print(kwargs)
+    bol = True
 
     pattern_phone = r'^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$'
     pattern_name = r'^[a-zA-Z]'
@@ -28,16 +30,17 @@ def valid_data(**kwargs):
             case 'email':
                 bol = valid_mail(value)
             case 'phone':
-                bol = True if re.match(pattern_phone, value) is not None else False
+                if re.match(pattern_phone, value) is None:
+                    bol = False
             case 'name':
-                bol = True if re.match(pattern_name, value) is not None else False
+                if re.match(pattern_name, value) is None:
+                    bol = False
+            case 'password':
+                if len(value) < 4:
+                    bol = False
             case _:
                 bol = False
 
         if not bol:
             print(f'Inviled {key}')
     return bol
-
-
-
-

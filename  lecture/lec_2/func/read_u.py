@@ -10,5 +10,5 @@ def all_users_info(users_storage):
     count = 0
     for key, value in users_storage.items():
         count += 1
-        print(f'{count}. User email: {key} \n -User_info: {value}')
+        print(f'{count}. User email: {key} \n   User_info: {value}')
 
