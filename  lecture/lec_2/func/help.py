@@ -5,7 +5,7 @@ def help_command():
     read - see profile:
         all - see details of all users
         [ enter email user] - view user information by email
-    update - # дописать позже
+    update - data update
     stop - program exit
     '''
     return print('Help:', massage)
