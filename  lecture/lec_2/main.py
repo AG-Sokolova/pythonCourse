@@ -61,4 +61,4 @@ while True:
             break
 
         case _:
-            print('Please, enter [create, update, delete, read]. Enter [help] if you need help.')
+            print('Please, Enter [create, update, delete, read] or Enter [help] if you need help.')
