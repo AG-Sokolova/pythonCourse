@@ -2,7 +2,6 @@ import csv
 from csv import writer
 
 file_path = 'file/'
-# text_file_title = 'text_1.txt'
 csv_file_title = 'csv_1.csv'
 
 file_title = file_path + csv_file_title
