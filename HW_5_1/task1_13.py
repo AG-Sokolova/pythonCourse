@@ -1,5 +1,5 @@
 from random import random, randint, shuffle
-from HW_5_1.func import plit_list, lists_even_odd, list_100
+from HW_5_1.func1_13 import plit_list, lists_even_odd, list_100
 
 
 list_int_numb = []  # => целые числа
