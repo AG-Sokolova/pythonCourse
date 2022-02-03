@@ -1,13 +1,13 @@
 from random import random, randint, shuffle
-import func
+from HW_5_1.func import plit_list, lists_even_odd
 
 
 list_int_numb = []  # => целые числа
 list_even_numb = []  # => четные числа
 list_odd_numb = []  # => нечетные числа
 list_rnd_int_num = []  # => рандомные числа
-
 list_result = []  # => результат вычислений
+
 
 # 1
 for item in range(1, 30):
@@ -58,12 +58,11 @@ print('из списка целых чисел выведет количеств
 
 # 8
 # Вариант 1
+list_rnd_int_num = [randint(0, 10) for i in range(1, 10)]
+# Вариант 2
 # for item in range(10):
 #     num = int(random()*(10-1)+1)
 #     list_rnd_int_num.append(num)
-# Вариант 2
-for item in range(10):
-    list_rnd_int_num.append(randint(1, 20))
 # Вариант 3
 # for item in range(1, 10):
 #     list_rnd_int_num.append(item)
@@ -71,5 +70,13 @@ for item in range(10):
 print('cоздаст список целых рандомных чисел:', list_rnd_int_num)
 
 # 9
+list_result.clear()  # очистить список результатов
+print(f'получив любой из созданных списков, разобьёт его на списки по 5 элементов:')
+list_result = plit_list(list_int_numb, 5)
+for key, value in enumerate(list_result):
+    print(f'---- список {key+1}: {value}')
 
 # 10
+lists_even_odd(list_int_numb)
+
+# 11
