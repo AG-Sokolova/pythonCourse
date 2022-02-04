@@ -3,8 +3,7 @@
 **источники:**  
 [python.org](https://docs.python.org/3.8/library/re.html)    
 [tproger.ru](https://tproger.ru/translations/regular-expression-python/)   
-[wikipedia.org](https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D0%B5_%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)  
-[habr.com](https://habr.com/ru/post/545150/)
+[wikipedia.org](https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B3%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D0%B5_%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)
 
 **Регулярные выражения** (их еще называют regexp, или regex) — это механизм для поиска и замены текста.  
 Для чего используются регулярные выражения:
@@ -22,7 +21,8 @@
 - [myregexp.com](http://myregexp.com/)
 - [regexr.com](https://regexr.com/)
 
-----
+# Основы по написанию регулярных выражений
+источник: [habr.com](https://habr.com/ru/post/545150/)
 ### Поиск одного символа
 Символ точка найдет любой один символ, включая цифры, спецсимволы и пробелы.
 ```
@@ -37,7 +37,7 @@ Regex: A.я
 \. — точка
 ```
 
-### Поиск по набору символов:
+### Поиск по набору символов
 Применяется диапазон допустимых значений c помощью квадратных скобок.
 ```
 Текст: Анна, Алла, аоикА74арплт, Аркан, А^&а, Абба
