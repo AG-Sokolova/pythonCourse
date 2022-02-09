@@ -7,11 +7,7 @@ dict_file_title = {'empty': file_patch + '/empty.csv',
                    'digits': file_patch + '/digits.csv',
                    'names': file_patch + '/names.csv',
                    'emals': file_patch + '/emals.csv',
-                   'nne': file_patch + '/nne.csv',
-                   'digits_2': file_patch + '/digits_2.csv',
-                   'names_2': file_patch + '/names_2.csv',
-                   'emals_2': file_patch + '/emals_2.csv',
-                   'nne_2.csv': file_patch + '/nne_2.csv'}
+                   'nne': file_patch + '/nne.csv'}
 
 list_names = []  # лист сгенерированных имен
 list_emals = []  # лист сгенерированных email
