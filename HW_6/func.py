@@ -46,7 +46,7 @@ def read_txt_names(list_names):
     return list_names
 
 
-# даты по годам, row_count строк[рандомно: from_date -  to_date]
+# генерирует даты по годам, row_count строк (рандомно: from_date -  to_date) => [dd-mm-yyyy, hh:mm]
 def random_date(row_count, from_date, to_date, list_date):
     current_day_month = datetime.now().strftime("%d-%m")
     current_time = datetime.now().strftime("%H:%M")
@@ -57,3 +57,28 @@ def random_date(row_count, from_date, to_date, list_date):
         list_date.append(f'{current_day_month}-{current_year}, {current_time}')
         counter += 1
     return list_date
+
+
+# генерирует номера телефонов, row_count строк [+7 990 990-90-90]
+def random_phone(row_count, list_phone):
+    counter = 0
+    while counter < row_count:
+        part_1 = random.randint(900, 999)
+        part_2 = random.randint(100, 999)
+        part_3 = random.randint(10, 99)
+        part_4 = random.randint(10, 99)
+        phone = f'+7 {part_1} {part_2}-{part_3}-{part_4}'
+        if phone not in list_phone:
+            list_phone.append(phone)
+            counter += 1
+    return list_phone
+
+
+# генерирует зарплаты, row_count строк
+def random_salary(row_count, list_salary):
+    counter = 0
+    while counter < row_count:
+        salary = random.randint(10000, 120000)
+        list_salary.append(salary)
+        counter += 1
+    return list_salary

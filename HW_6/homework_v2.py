@@ -1,5 +1,5 @@
 import csv
-from func import read_txt_names, unique_email,gen_email
+from func import read_txt_names, unique_email, gen_email
 
 file_patch = 'generated_data'
 dict_file_title = {'digits_2': file_patch + '/digits_2.csv',

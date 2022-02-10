@@ -1,4 +1,3 @@
-import csv
 import pandas
 from func import random_date
 
