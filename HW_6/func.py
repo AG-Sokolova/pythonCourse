@@ -1,4 +1,5 @@
 import random
+from datetime import datetime, timezone
 
 
 # из строки "Name Lastname" получает email "n.lastname@gmail.com
@@ -44,3 +45,15 @@ def read_txt_names(list_names):
     get_names.close()
     return list_names
 
+
+# даты по годам, row_count строк[рандомно: from_date -  to_date]
+def random_date(row_count, from_date, to_date, list_date):
+    current_day_month = datetime.now().strftime("%d-%m")
+    current_time = datetime.now().strftime("%H:%M")
+
+    counter = 0
+    while counter < row_count:
+        current_year = random.randint(from_date, to_date)
+        list_date.append(f'{current_day_month}-{current_year}, {current_time}')
+        counter += 1
+    return list_date
