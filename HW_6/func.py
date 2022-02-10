@@ -12,22 +12,23 @@ def gen_email(user):
             name = value[0]
         elif item == 1:
             last_name = value
-    email_name = f'{name}.{last_name}@gmail.com'
-    return email_name.lower()
+    email = f'{name}.{last_name}@gmail.com'
+    return email.lower()
 
 
-# рандомное имя email
+# рандомное имя email => [текст@gmail.com]
 def rnd_name_mail(length):
     letters = '1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
     rand_string = ''.join(random.choice(letters) for i in range(length))
-    return rand_string
+    email = f'{rand_string}@gmail.com'
+    return email
 
 
 #  проверка что еще нет такого email в списке
 def unique_email(mail, list_mail):
     while True:
         if mail in list_mail:  # проверка что такой email еще нет
-            mail = f'{rnd_name_mail(8)}@gmail.com'  # если есть, то генерируем новый => [текст@gmail.com]
+            mail = rnd_name_mail(8)  # если есть, то генерируем новый
         else:
             list_mail.append(mail)
             break

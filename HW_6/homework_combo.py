@@ -1,5 +1,5 @@
 import pandas
-from func import read_txt_names, unique_email, gen_email, random_date, random_salary, random_phone
+from func import read_txt_names, unique_email, gen_email, random_date, random_salary, random_phone, rnd_name_mail
 
 list_name = []
 list_email = []
@@ -9,7 +9,6 @@ list_phone = []
 list_salary = []
 
 df_nne = pandas.read_csv('generated_data/nne_2.csv')
-print(df_nne)
 
 # получаем список имен из txt файла
 read_txt_names(list_name)
@@ -24,8 +23,12 @@ for i in range(0, count_row_nne):
             list_name.remove(value)
 
 # генерируем email, для новых имен
+nne_list_mail = df_nne['email'].to_list()
 for value in list_name:
-    mail = email = unique_email(gen_email(value), list_email)
+    if value not in nne_list_mail:
+        email = unique_email(gen_email(value), list_email)
+    else:
+        email = unique_email(rnd_name_mail(7), list_email)
 
 # удаляем строку number
 del df_nne['number']
@@ -55,6 +58,9 @@ df_nne['salary'] = list_salary
 
 # сортировка по столбцу имя в алфавитном порядке
 df_nne = df_nne.sort_values(by=['name'])
-print(df_nne)
+
+list_number = list(range(1, count_row+1))
+df_nne.insert(0, "number", list_number)
+
 # создаем новый csv файл combo
 df_nne.to_csv(r"generated_data/combo.csv", index=False)

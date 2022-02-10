@@ -12,7 +12,6 @@ list_emals = []  # лист сгенерированных email
 
 # получить уникальный список имен
 read_txt_names(list_names)
-print('Список имен полученный из txt файла:', len(list_names), list_names)
 
 # 6 - digits_2.csv файл с 1-м полем number, 300 строк [от 10 до 310]
 with open(dict_file_title['digits_2'], 'w', newline='') as f_digits2_csv:
@@ -59,7 +58,7 @@ with open(dict_file_title['nne_2'], 'w', newline='') as f_nne2_csv:
 
     for item, value in enumerate(list_names):
         if item < 450:
-            mail = email = unique_email(gen_email(value), list_emals)
+            mail = unique_email(gen_email(value), list_emals)
             user = {'number': item+1,
                     'name': value,
                     'email': mail}
