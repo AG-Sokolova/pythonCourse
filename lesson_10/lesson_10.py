@@ -1,5 +1,6 @@
-# selenium
 from selenium import webdriver
 
-driver = webdriver.Firefox('/home/as/etc/selenium/geckodriver')
-driver.get('http://google.com')
+driver = webdriver.Firefox('/selenium/geckodriver')
+driver.get("http://www.google.com")
+
+
