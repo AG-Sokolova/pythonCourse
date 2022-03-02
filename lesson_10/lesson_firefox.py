@@ -19,11 +19,14 @@ field_entry('surname', 'Didnt')
 field_entry('email', 'inn_did@gmail.com')
 field_entry('password', '12345qwert')
 
-# success_massage = driver.find_element(By.TAG_NAME, 'strong')
-# if 'Success' in success_massage.text:
-#     print('Test success_massage - PASSED')
-# else:
-#     print('Test success_massage - FAILED')
+submit_button = driver.find_element(By.TAG_NAME, 'button')
+submit_button.click()
+
+success_massage = driver.find_element(By.TAG_NAME, 'strong')
+if 'Success' in success_massage.text:
+    print('Test success_massage - PASSED')
+else:
+    print('Test success_massage - FAILED')
 
 time.sleep(3)
 driver.close()
