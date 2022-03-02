@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.firefox.service import Service
 import time
 
-driver = webdriver.Firefox(service=Service(executable_path='/home/as/github/pythonCourse/lesson_10/selenium/geckodriver'))
+driver = webdriver.Firefox(service=Service(executable_path='./selenium/geckodriver'))
 driver.get("http://itcareer.pythonanywhere.com")
 
 # web_form = driver.find_element_by_class_name('form_group')
