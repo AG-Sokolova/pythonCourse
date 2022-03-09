@@ -1,7 +1,10 @@
 # Цветной вывод текста в Python
-статья: [link](https://all-python.ru/osnovy/tsvetnoj-vyvod-teksta.html)
+ [Цветной вывод текста в Python](https://all-python.ru/osnovy/tsvetnoj-vyvod-teksta.html)
+
+
 
 **Разбор на примере кода <code>«\033[31m\033[43m»</code>:**
+
 <pre>
 /033 — обозначение того, что дальше идет какой-то управляющий цветом код;
 [31m — цвет текста (красный);

@@ -1,9 +1,11 @@
 # Функция Open в Python
-источник:
 [docs-python](https://docs-python.ru/tutorial/vstroennye-funktsii-interpretatora-python/funktsija-open/)  
 [docs-python](https://docs-python.ru/tutorial/osnovnye-vstroennye-tipy-python/tip-dannyh-file-object-fajly-potoki/)
 
+
+
 #### Структура
+
 ```python
 open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
 ```
@@ -46,7 +48,7 @@ open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, clo
  'a+' | Открывает файл для добавления и чтения.  |  Указатель файла находится в конце файла, если файл существует. Файл открывается в режиме добавления. Если файл не существует, он создает новый файл для чтения и записи.
  'ab+'| Открывает файл в бинарном режиме для добавления и чтения.  |  Указатель файла находится в конце файла, если файл существует. Файл открывается в режиме добавления. Если файл не существует, он создает новый файл для чтения и записи.
 
-#### Примеры:
-- [lesson_csv](https://github.com/AnastasiaSokolov/pythonCourse/blob/lecture/lesson_3/lesson_csv.py)
-- [lesson_txt](https://github.com/AnastasiaSokolov/pythonCourse/blob/lecture/lesson_3/lesson_txt.py)
-- [lesson_json](https://github.com/AnastasiaSokolov/pythonCourse/blob/lecture/lesson_4/lesson.py)
+#### Пример
+- [lesson_csv](https://github.com/AG-Sokolova/pythonCourse/blob/lecture/lesson_3/lesson_csv.py)
+- [lesson_txt](https://github.com/AG-Sokolova/pythonCourse/blob/lecture/lesson_3/lesson_txt.py)
+- [lesson_json](https://github.com/AG-Sokolova/pythonCourse/blob/lecture/lesson_4/lesson.py)

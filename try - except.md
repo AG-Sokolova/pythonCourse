@@ -1,12 +1,12 @@
 # Конструкция try - except для обработки исключений
 
-источник: [link](https://pythonworld.ru/tipy-dannyx-v-python/isklyucheniya-v-python-konstrukciya-try-except-dlya-obrabotki-isklyuchenij.html)
+[pythonworld](https://pythonworld.ru/tipy-dannyx-v-python/isklyucheniya-v-python-konstrukciya-try-except-dlya-obrabotki-isklyuchenij.html)
 
-источник: [link](https://andreyex.ru/yazyk-programmirovaniya-python/kak-luchshe-vsego-ispolzovat-try-except-v-python-specialno-dlya-nachinayushhix/)
+[andreyex](https://andreyex.ru/yazyk-programmirovaniya-python/kak-luchshe-vsego-ispolzovat-try-except-v-python-specialno-dlya-nachinayushhix/)
 
 
 
-Исключения (exceptions) необходимы для того, что бы сообщить программисту об ошибках.
+**Исключения** (exceptions) необходимы для того, что бы сообщить программисту об ошибках.
 
 Причинами ошибок могут быть плохой пользовательский ввод, недостаточные разрешения файла, недоступность сетевого ресурса, недостаточная память или ошибка программиста.
 
