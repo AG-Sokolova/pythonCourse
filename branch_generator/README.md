@@ -6,4 +6,4 @@ time_gen_branch - пересоздает скрипт и запискает ег
 
 2. Запустить через терпминал один из файлов с расширением py `python3 имя_файла.py`
 
-   Для Linux : для файла test поставить галочку *Правой кнопкой мыши по файлу > Properties > Permissions > Excute*
+   Для Linux: поставить галочку *Правой кнопкой мыши по файлу 'test' > Properties > Permissions > Excute*
