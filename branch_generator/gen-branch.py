@@ -1,5 +1,3 @@
-import subprocess
-
 list_email = []
 list_branch_name = []
 
@@ -30,13 +28,8 @@ def script_bash(path, list_branch):
             add_branch.write('\n')
     add_branch.close()
 
-def run_scripts(path):
-    proc = subprocess.Popen(path, stdout=subprocess.PIPE)
-    output = proc.stdout.read()
-    print(output)
-
 
 read_file_email('email_list.txt', list_email)
 name_resolution(list_email, list_branch_name)
-script_bash('test.sh', list_branch_name)
-run_scripts('./test.sh')
+script_bash('new-folder/branches.sh', list_branch_name)
+
