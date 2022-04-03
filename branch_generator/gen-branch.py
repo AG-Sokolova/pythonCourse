@@ -31,5 +31,5 @@ def script_bash(path, list_branch):
 
 read_file_email('email_list.txt', list_email)
 name_resolution(list_email, list_branch_name)
-script_bash('new-folder/branches.sh', list_branch_name)
+script_bash('branches.sh', list_branch_name)
 
