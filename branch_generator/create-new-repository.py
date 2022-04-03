@@ -11,6 +11,8 @@ def script_bash(path, url):
     with open(path, 'w') as new_repository:
         script = f'''
         #!/bin/bash
+        mkdir new-folder
+        cd new-folder
         git init
         git add README.md
         git commit -m "first commit"
